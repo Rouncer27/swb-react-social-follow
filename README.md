@@ -13,15 +13,29 @@ npm install --save swb-react-social-follow
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
-import MyComponent from 'swb-react-social-follow'
+import Icons from "swb-react-social-follow";
 
 class Example extends Component {
-  render () {
+  render() {
+    const options = {
+      facebook: true,
+      facebookUrl: "https://www.facebook.com/",
+      twitter: true,
+      twitterUrl: "https://twitter.com/switchback4ever",
+      linkedin: true,
+      linkedinUrl: "https://www.linkedin.com/company/",
+      instagram: true,
+      instagramUrl: "https://www.instagram.com/",
+      youtube: true,
+      youtubeUrl: "https://www.youtube.com/"
+    };
     return (
-      <MyComponent />
-    )
+      <div>
+        <Icons {...options} />
+      </div>
+    );
   }
 }
 ```
