@@ -18,7 +18,7 @@ const SocialIconStyled = styled.div`
   }
 `;
 
-const Pintrest = ({ url }) => {
+const Pinterest = ({ url }) => {
   return (
     <SocialIconStyled>
       <a target="_blank" rel="nooperner noreferrer" href={url}>
@@ -28,4 +28,4 @@ const Pintrest = ({ url }) => {
   );
 };
 
-export default Pintrest;
+export default Pinterest;

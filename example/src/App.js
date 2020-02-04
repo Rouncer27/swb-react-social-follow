@@ -15,10 +15,12 @@ export default class App extends Component {
       instagramUrl: "https://www.instagram.com/",
       youtube: true,
       youtubeUrl: "https://www.youtube.com/",
-      pintrest: true,
-      pintrestUrl: "https://www.pintrest.com/",
+      pinterest: true,
+      pinterestUrl: "https://www.pinterest.ca/",
       snapchat: true,
-      snapchatUrl: "https://www.pintrest.com/"
+      snapchatUrl: "https://www.snapchat.com/",
+      google: true,
+      googleUrl: "https://www.snapchat.com/"
     };
     return (
       <div>

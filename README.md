@@ -29,7 +29,13 @@ class Example extends Component {
       instagram: true,
       instagramUrl: "https://www.instagram.com/",
       youtube: true,
-      youtubeUrl: "https://www.youtube.com/"
+      youtubeUrl: "https://www.youtube.com/",
+      pinterest: true,
+      pinterestUrl: "https://www.pinterest.ca/",
+      snapchat: true,
+      snapchatUrl: "https://www.snapchat.com/",
+      google: true,
+      googleUrl: "https://www.snapchat.com/"
     };
     return (
       <div>

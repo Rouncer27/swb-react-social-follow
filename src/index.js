@@ -6,8 +6,9 @@ import Twitter from "./SocialIcons/Twitter/";
 import Linkedin from "./SocialIcons/Linkedin/";
 import Instagram from "./SocialIcons/Instagram/";
 import Youtube from "./SocialIcons/Youtube/";
-import Pintrest from "./SocialIcons/Pintrest/";
+import Pinterest from "./SocialIcons/Pinterest/";
 import Snapchat from "./SocialIcons/Snapchat/";
+import Google from "./SocialIcons/Google/";
 
 const DivStyled = styled.div`
   box-sizing: border-box;
@@ -36,10 +37,12 @@ const ExampleComponent = ({
   instagramUrl = "https://www.instagram.com/",
   youtube = false,
   youtubeUrl = "https://www.youtube.com/",
-  pintrest = false,
-  pintrestUrl = "https://www.pintrest.com/",
+  pinterest = false,
+  pinterestUrl = "https://www.pintrest.com/",
   snapchat = false,
-  snapchatUrl = "https://snapchat.com"
+  snapchatUrl = "https://www.snapchat.com/",
+  google = false,
+  googleUrl = "https://www.google.com/"
 }) => {
   return (
     <DivStyled>
@@ -48,8 +51,9 @@ const ExampleComponent = ({
       {linkedin && <Linkedin url={linkedinUrl} />}
       {instagram && <Instagram url={instagramUrl} />}
       {youtube && <Youtube url={youtubeUrl} />}
-      {pintrest && <Pintrest url={pintrestUrl} />}
+      {pinterest && <Pinterest url={pinterestUrl} />}
       {snapchat && <Snapchat url={snapchatUrl} />}
+      {google && <Google url={googleUrl} />}
     </DivStyled>
   );
 };
