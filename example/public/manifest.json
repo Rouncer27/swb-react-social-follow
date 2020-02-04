@@ -1,0 +1,8 @@
+{
+  "short_name": "swb-react-social-follow",
+  "name": "swb-react-social-follow",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
