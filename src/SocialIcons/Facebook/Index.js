@@ -1,35 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 import { FaFacebookF } from "react-icons/fa";
-import { IconBase } from "../../styles";
+import IconStyled from "../../IconStyled";
 
-const SocialIconStyled = styled.div`
-  ${IconBase};
+const SocialIconStyled = styled.a`
+  border-color: rgba(24, 119, 242, 1);
+  color: rgba(24, 119, 242, 1);
 
-  a {
+  &:hover {
+    background: rgba(24, 119, 242, 1);
     border-color: rgba(24, 119, 242, 1);
-    color: rgba(24, 119, 242, 1);
-
-    &:hover {
-      background: rgba(24, 119, 242, 1);
-      border-color: rgba(24, 119, 242, 1);
-      color: #fff;
-    }
-
-    svg {
-      width: 100%;
-      height: 100%;
-    }
+    color: #fff;
   }
 `;
 
-const Facebook = ({ url }) => {
+const Facebook = ({ iconType, url }) => {
   return (
-    <SocialIconStyled>
-      <a target="_blank" rel="nooperner noreferrer" href={url}>
+    <IconStyled iconType={iconType}>
+      <SocialIconStyled
+        iconType={iconType}
+        target="_blank"
+        rel="nooperner noreferrer"
+        href={url}
+      >
         <FaFacebookF />
-      </a>
-    </SocialIconStyled>
+      </SocialIconStyled>
+    </IconStyled>
   );
 };
 

@@ -20,12 +20,13 @@ import Icons from "swb-react-social-follow";
 class Example extends Component {
   render() {
     const options = {
+      iconType: "round",
       facebook: true,
       facebookUrl: "https://www.facebook.com/",
       twitter: true,
-      twitterUrl: "https://twitter.com/switchback4ever",
+      twitterUrl: "https://twitter.com/",
       linkedin: true,
-      linkedinUrl: "https://www.linkedin.com/company/",
+      linkedinUrl: "https://www.linkedin.com/",
       instagram: true,
       instagramUrl: "https://www.instagram.com/",
       youtube: true,

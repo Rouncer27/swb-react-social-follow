@@ -1,30 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 import { FaYoutube } from "react-icons/fa";
-import { IconBase } from "../../styles";
+import IconStyled from "../../IconStyled";
 
-const SocialIconStyled = styled.div`
-  ${IconBase};
+const SocialIconStyled = styled.a`
+  border-color: rgba(255, 0, 0, 1);
+  color: rgba(255, 0, 0, 1);
 
-  a {
+  &:hover {
+    background: rgba(255, 0, 0, 1);
     border-color: rgba(255, 0, 0, 1);
-    color: rgba(255, 0, 0, 1);
-
-    &:hover {
-      background: rgba(255, 0, 0, 1);
-      border-color: rgba(255, 0, 0, 1);
-      color: #fff;
-    }
+    color: #fff;
   }
 `;
 
-const Youtube = ({ url }) => {
+const Youtube = ({ url, iconType }) => {
   return (
-    <SocialIconStyled>
-      <a target="_blank" rel="nooperner noreferrer" href={url}>
+    <IconStyled iconType={iconType}>
+      <SocialIconStyled target="_blank" rel="nooperner noreferrer" href={url}>
         <FaYoutube />
-      </a>
-    </SocialIconStyled>
+      </SocialIconStyled>
+    </IconStyled>
   );
 };
 

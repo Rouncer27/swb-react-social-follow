@@ -1,4 +1,7 @@
-const IconBase = `
+import React from "react";
+import styled from "styled-components";
+
+const IconBase = styled.div`
   align-self: center;
   position: relative;
   width: 40px;
@@ -15,9 +18,9 @@ const IconBase = `
     height: 100%;
     padding: 7px;
     transition: all 0.3s ease;
-    border: solid 2px #000;
-    border-radius: 50%;
-    color: #000;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: ${props => (props.iconType === "square" ? "0%" : "50%")};
     font-size: 18px;
 
     svg {
@@ -28,4 +31,8 @@ const IconBase = `
   }
 `;
 
-export { IconBase };
+const IconStyled = ({ iconType, children }) => {
+  return <IconBase iconType={iconType}>{children}</IconBase>;
+};
+
+export default IconStyled;

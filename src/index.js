@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import initialState from "./initialState";
+
 import Facebook from "./SocialIcons/Facebook/";
 import Twitter from "./SocialIcons/Twitter/";
 import Linkedin from "./SocialIcons/Linkedin/";
@@ -26,36 +28,56 @@ const DivStyled = styled.div`
   }
 `;
 
-const ExampleComponent = ({
-  facebook = false,
-  facebookUrl = "https://facebook.com/",
-  twitter = false,
-  twitterUrl = "https://twitter.com/",
-  linkedin = false,
-  linkedinUrl = "https://linkedin.com/",
-  instagram = false,
-  instagramUrl = "https://www.instagram.com/",
-  youtube = false,
-  youtubeUrl = "https://www.youtube.com/",
-  pinterest = false,
-  pinterestUrl = "https://www.pintrest.com/",
-  snapchat = false,
-  snapchatUrl = "https://www.snapchat.com/",
-  google = false,
-  googleUrl = "https://www.google.com/"
-}) => {
+const Icons = ({ ...options }) => {
+  const iconType = options.iconType ? options.iconType : initialState.iconType;
+  const facebook = options.facebook ? options.facebook : initialState.facebook;
+  const facebookUrl = options.facebookUrl
+    ? options.facebookUrl
+    : initialState.facebookUrl;
+  const twitter = options.twitter ? options.twitter : initialState.twitter;
+  const twitterUrl = options.twitterUrl
+    ? options.twitterUrl
+    : initialState.twitterUrl;
+  const linkedin = options.linkedin ? options.linkedin : initialState.linkedin;
+  const linkedinUrl = options.linkedinUrl
+    ? options.linkedinUrl
+    : initialState.linkedinUrl;
+  const instagram = options.instagram
+    ? options.instagram
+    : initialState.instagram;
+  const instagramUrl = options.instagramUrl
+    ? options.instagramUrl
+    : initialState.instagramUrl;
+  const youtube = options.youtube ? options.youtube : initialState.youtube;
+  const youtubeUrl = options.youtubeUrl
+    ? options.youtubeUrl
+    : initialState.youtubeUrl;
+  const pinterest = options.pinterest
+    ? options.pinterest
+    : initialState.pinterest;
+  const pinterestUrl = options.pinterestUrl
+    ? options.pinterestUrl
+    : initialState.pinterestUrl;
+  const snapchat = options.snapchat ? options.snapchat : initialState.snapchat;
+  const snapchatUrl = options.snapchatUrl
+    ? options.snapchatUrl
+    : initialState.snapchatUrl;
+  const google = options.google ? options.google : initialState.google;
+  const googleUrl = options.googleUrl
+    ? options.googleUrl
+    : initialState.googleUrl;
   return (
     <DivStyled>
-      {facebook && <Facebook url={facebookUrl} />}
-      {twitter && <Twitter url={twitterUrl} />}
-      {linkedin && <Linkedin url={linkedinUrl} />}
-      {instagram && <Instagram url={instagramUrl} />}
-      {youtube && <Youtube url={youtubeUrl} />}
-      {pinterest && <Pinterest url={pinterestUrl} />}
-      {snapchat && <Snapchat url={snapchatUrl} />}
-      {google && <Google url={googleUrl} />}
+      {facebook && <Facebook iconType={iconType} url={facebookUrl} />}
+      {twitter && <Twitter iconType={iconType} url={twitterUrl} />}
+      {linkedin && <Linkedin iconType={iconType} url={linkedinUrl} />}
+      {instagram && <Instagram iconType={iconType} url={instagramUrl} />}
+      {youtube && <Youtube iconType={iconType} url={youtubeUrl} />}
+      {pinterest && <Pinterest iconType={iconType} url={pinterestUrl} />}
+      {snapchat && <Snapchat iconType={iconType} url={snapchatUrl} />}
+      {google && <Google iconType={iconType} url={googleUrl} />}
     </DivStyled>
   );
 };
 
-export default ExampleComponent;
+export default Icons;
