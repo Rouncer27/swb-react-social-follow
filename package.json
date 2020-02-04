@@ -31,6 +31,7 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
@@ -53,9 +54,13 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^1.6.2",
-    "rollup-plugin-url": "^1.4.0"
+    "rollup-plugin-url": "^1.4.0",
+    "styled-components": "^5.0.0"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "react-icons": "^3.9.0"
+  }
 }
