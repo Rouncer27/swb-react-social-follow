@@ -7,12 +7,12 @@ const SocialIconStyled = styled.div`
   ${IconBase};
 
   a {
-    border-color: #ff0000;
-    color: #ff0000;
+    border-color: rgba(255, 0, 0, 1);
+    color: rgba(255, 0, 0, 1);
 
     &:hover {
-      background: #ff0000;
-      border-color: #ff0000;
+      background: rgba(255, 0, 0, 1);
+      border-color: rgba(255, 0, 0, 1);
       color: #fff;
     }
   }

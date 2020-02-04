@@ -14,6 +14,7 @@ const IconBase = `
     width: 100%;
     height: 100%;
     padding: 7px;
+    transition: all 0.3s ease;
     border: solid 2px #000;
     border-radius: 50%;
     color: #000;

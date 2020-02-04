@@ -1,31 +1,31 @@
 import React from "react";
 import styled from "styled-components";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaSnapchatGhost } from "react-icons/fa";
 import { IconBase } from "../../styles";
 
 const SocialIconStyled = styled.div`
   ${IconBase};
 
   a {
-    border-color: rgba(0, 119, 181, 1);
-    color: rgba(0, 119, 181, 1);
+    border-color: rgba(255, 252, 0, 1);
+    color: rgba(255, 252, 0, 1);
 
     &:hover {
-      background: rgba(0, 119, 181, 1);
-      border-color: rgba(0, 119, 181, 1);
+      background: rgba(255, 252, 0, 1);
+      border-color: rgba(255, 252, 0, 1);
       color: #fff;
     }
   }
 `;
 
-const Linkedin = ({ url }) => {
+const Snapchat = ({ url }) => {
   return (
     <SocialIconStyled>
       <a target="_blank" rel="nooperner noreferrer" href={url}>
-        <FaLinkedinIn />
+        <FaSnapchatGhost />
       </a>
     </SocialIconStyled>
   );
 };
 
-export default Linkedin;
+export default Snapchat;
